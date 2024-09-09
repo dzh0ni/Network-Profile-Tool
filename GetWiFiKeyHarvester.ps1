@@ -1,7 +1,7 @@
 #====================================================
 #   SCRIPT:                   WIFI KEY HARVESTER
 #   DESARROLLADO POR:         JONY RIVERA 
-#   FECHA DE ACTUALIZACIÓN:   08-09-2024 
+#   FECHA DE ACTUALIZACIÓN:   09-09-2024 
 #   CONTACTO POR TELEGRAMA:   https://t.me/Jony_Rivera
 #   GITHUB OFICIAL:           https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester
 #====================================================
@@ -90,7 +90,7 @@ Show-Banner -BannerColor $green -TextColor $green
 Set-ConsoleColor -ForegroundColor $green
 Write-Host "   ID        :  $env:USERNAME"
 Write-Host "   Version   :  v0.0.01-dev"
-Write-Host "   Update    :  [05/07/2024]`n"
+Write-Host "   Update    :  [09/09/2024]`n"
 
 Write-Host " Developed by: Jony Rivera`n"
 
