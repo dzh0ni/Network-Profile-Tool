@@ -9,7 +9,15 @@ de seguridad en tus propios dispositivos.
 
 ### :computer: Instalación
 ```plaintext
-https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester/archive/refs/heads/main.zip
+Para instalar y ejecutar el script WiFi Key Harvester, sigue estos pasos:
+
+1. Descarga el archivo ZIP del repositorio:
+
+   [Descargar el repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester/archive/refs/heads/main.zip)
+
+2. Extrae el contenido del archivo ZIP:
+
+   Descomprime el archivo descargado en una carpeta de tu elección. Esto creará una carpeta con todos los archivos necesarios.
 ```
 
 ## :rocket: Modo de Uso
