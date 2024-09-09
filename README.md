@@ -25,12 +25,20 @@ Sigue estos pasos para ejecutar el script.
 
 1. Navega al directorio del script.
 
+   Navega hasta la carpeta donde descomprimiste el archivo ZIP. 
+
 2. Ejecuta el script:
-   - Haz doble clic en `RunGetWiFiKeyHarvesters.bat` o `RunGetWiFiKeyHarvesters.cmd` para ejecutar el script directamente.
+
+   Dentro de la carpeta descomprimida, haz doble clic en uno de los siguientes archivos para ejecutar el script
+
+   - `RunGetWiFiKeyHarvesters.bat`
+   - `RunGetWiFiKeyHarvesters.cmd`
 
 3. Visualiza los resultados:
    - El script mostrará los perfiles Wi-Fi encontrados y sus contraseñas en la consola.
    - Las contraseñas se guardarán en un archivo de texto llamado `wifi_passwords.txt` en el mismo directorio donde se encuentra el script.
+
+¡Y eso es todo! Ahora estás listo para utilizar WiFi Key Harvester para recuperar tus contraseñas Wi-Fi guardadas.
 
 ##:mag: Ejemplo de Salida
 El archivo wifi_passwords.txt contendrá entradas en el siguiente formato:
