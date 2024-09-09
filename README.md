@@ -14,15 +14,20 @@ https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester/archive/refs/heads/
 
 ## :rocket: Modo de Uso
 
-Ejecute el script simplemente ejecuta el siguiente comando `wifiteutility`  en tu terminal y presiona Enter.
+Sigue estos pasos para ejecutar el script.
 
 ```plaintext
 1. Navega al directorio del script.
-2. Ejecuta el script con doble clic en `RunGetWiFiKeyHarvesters.bat` o `RunGetWiFiKeyHarvesters.cmd`.
-3. El script mostrará los perfiles Wi-Fi encontrados y sus contraseñas, las cuales se guardarán en un archivo de texto llamado `wifi_passwords.txt` en el mismo directorio.
+
+2. Ejecuta el script:
+   - Haz doble clic en `RunGetWiFiKeyHarvesters.bat` o `RunGetWiFiKeyHarvesters.cmd` para ejecutar el script directamente.
+
+3. Visualiza los resultados:
+   - El script mostrará los perfiles Wi-Fi encontrados y sus contraseñas en la consola.
+   - Las contraseñas se guardarán en un archivo de texto llamado `wifi_passwords.txt` en el mismo directorio donde se encuentra el script.
 ```
 
-##:page_facing_up: Ejemplo de Salida
+##:mag: Ejemplo de Salida
 El archivo wifi_passwords.txt contendrá entradas en el siguiente formato:
 
 ```plaintext
@@ -47,6 +52,7 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 - Registro de Contraseñas: Guarda las contraseñas extraídas en un archivo de texto para su posterior consulta.
 - Detección de Duplicados: Verifica si un perfil ya ha sido registrado previamente para evitar duplicados en el archivo de salida.
 - Soporte para Windows: Diseñado específicamente para entornos Windows.
+- Permisos: Asegúrate de ejecutar los scripts con permisos adecuados
 
 ## :star2: Características 
 
@@ -65,10 +71,9 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 |------------------|-------------------------------|-------------------------------------------------------|
 | :file_folder:    | imágenes                      | Carpeta para imágenes                                |
 | :file_folder:    | .gitattributes                | Archivo para configuración de Git                    |
-| :page_facing_up: | LICENSE                       | Archivo de licencia del proyecto                     |
-| :file_folder:    | Scripts                       | Carpeta para scripts de ejecución y soporte          |
-| :page_facing_up: | README.md                     | Archivo de documentación principal                   |
 | :page_facing_up: | GetWiFiKeyHarvester.ps1       | Script principal para la extracción de claves Wi-Fi   |
+| :page_facing_up: | LICENSE                       | Archivo de licencia del proyecto                     |
+| :page_facing_up: | README.md                     | Archivo de documentación principal                   |
 | :page_facing_up: | RunGetWiFiKeyHarvesters.bat    | Script de batch para ejecutar el script en Windows   |
 | :page_facing_up: | RunGetWiFiKeyHarvesters.cmd    | Script de bat para ejecutar el script en Windows     |
 
@@ -76,4 +81,5 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 
 ## :email: Contacto 
 * :busts_in_silhouette: **Jony Rivera**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility) - Desarrollador WiFi Key Harvester
+
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
