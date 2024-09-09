@@ -1,4 +1,4 @@
-﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility/blob/main/Imagenes/Wifite-Utility.png)
+﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester/blob/main/Imagenes/WiFi-Key-Harvester.png)
 
 # WiFi Key Harvester :octocat: 
 ## :information_source: Descripción
