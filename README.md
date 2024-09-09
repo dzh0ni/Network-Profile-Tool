@@ -8,7 +8,7 @@ es útil para recuperar contraseñas olvidadas o para realizar auditorías
 de seguridad en tus propios dispositivos.
 
 ### :computer: Instalación
-```plaintext
+
 Para instalar y ejecutar el script WiFi Key Harvester, sigue estos pasos:
 
 1. Descarga el archivo ZIP del repositorio:
@@ -18,13 +18,11 @@ Para instalar y ejecutar el script WiFi Key Harvester, sigue estos pasos:
 2. Extrae el contenido del archivo ZIP:
 
    Descomprime el archivo descargado en una carpeta de tu elección. Esto creará una carpeta con todos los archivos necesarios.
-```
 
 ## :rocket: Modo de Uso
 
 Sigue estos pasos para ejecutar el script.
 
-```plaintext
 1. Navega al directorio del script.
 
 2. Ejecuta el script:
@@ -33,7 +31,6 @@ Sigue estos pasos para ejecutar el script.
 3. Visualiza los resultados:
    - El script mostrará los perfiles Wi-Fi encontrados y sus contraseñas en la consola.
    - Las contraseñas se guardarán en un archivo de texto llamado `wifi_passwords.txt` en el mismo directorio donde se encuentra el script.
-```
 
 ##:mag: Ejemplo de Salida
 El archivo wifi_passwords.txt contendrá entradas en el siguiente formato:
