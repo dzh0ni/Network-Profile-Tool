@@ -40,7 +40,7 @@ Sigue estos pasos para ejecutar el script.
 
 ¡Y eso es todo! Ahora estás listo para utilizar WiFi Key Harvester para recuperar tus contraseñas Wi-Fi guardadas.
 
-##:mag: Ejemplo de Salida
+## :mag: Ejemplo de Salida
 El archivo wifi_passwords.txt contendrá entradas en el siguiente formato:
 
 ```plaintext
