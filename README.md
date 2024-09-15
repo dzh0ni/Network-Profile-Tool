@@ -93,6 +93,6 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 :warning: Disclaimer: Este script es solo para uso educativo y personal. No lo utilices para acceder a redes de terceros sin autorización, ya que esto es ilegal y contrario a los términos de uso de este proyecto.
 
 ## :email: Contacto 
-* :busts_in_silhouette: **Jony Rivera**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility) - Desarrollador WiFi Key Harvester
+* :busts_in_silhouette: **Dzhoni_dev**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility) - Desarrollador WiFi Key Harvester
 
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
