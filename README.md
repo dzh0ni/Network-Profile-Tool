@@ -1,6 +1,7 @@
 ﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester/blob/main/Imagenes/WiFi-Key-Harvester.png)
 
-# WiFi Key Harvester :octocat: 
+# WiFi Key Harvester :octocat:
+ 
 ## :information_source: Descripción
 WiFi Key Harvester es un script en PowerShell diseñado para extraer y registrar 
 las contraseñas de todas las redes Wi-Fi guardadas en tu equipo. Este script 
