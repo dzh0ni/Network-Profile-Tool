@@ -1,8 +1,8 @@
 #====================================================
-#   SCRIPT:                   WIFI KEY HARVESTER
-#   DESARROLLADO POR:         JONY RIVERA 
+#   SCRIPT:                   WiFi Key Harvester
+#   DESARROLLADO POR:         JONY RIVERA (Dzhoni_dev) 
 #   FECHA DE ACTUALIZACIÓN:   09-09-2024 
-#   CONTACTO POR TELEGRAMA:   https://t.me/Jony_Rivera
+#   CONTACTO TELEGRAM:        https://t.me/Dzhoni_dev
 #   GITHUB OFICIAL:           https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester
 #====================================================
 
@@ -19,7 +19,7 @@ function Show-Banner {
     $host.UI.RawUI.ForegroundColor = $BannerColor
 
     Write-Host "`n|-------------------------------------------------|"
-    Write-Host "|--------- PowerShell - WiFi Key Harvester -------|"
+    Write-Host "|--------- WiFi Key Harvester - PowerShell -------|"
 
     # Cambiar el color del texto
     $host.UI.RawUI.ForegroundColor = $TextColor
@@ -90,9 +90,9 @@ Show-Banner -BannerColor $green -TextColor $green
 Set-ConsoleColor -ForegroundColor $green
 Write-Host "   ID        :  $env:USERNAME"
 Write-Host "   Version   :  v0.0.01-dev"
-Write-Host "   Update    :  [09/09/2024]`n"
+Write-Host "   Update    :  [09-09-2024]`n"
 
-Write-Host " Developed by: Jony Rivera`n"
+Write-Host " Version coded by: Dzhoni_dev`n"
 
 # Crear o abrir un archivo para guardar las contraseñas
 $outputFile = "wifi_passwords.txt"
