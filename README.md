@@ -50,15 +50,6 @@ Contraseña: <Contraseña>
 -----------------------------------
 ```
 
-## :warning: Advertencias
-
-- Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
-- Seguridad: Guarda el archivo `wifi_passwords.txt` en un lugar seguro y elimínalo si no es necesario para evitar que terceros accedan a esta información.
-
-## :star2: Contribuciones
-
-Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un *pull request* o *issue*.
-
 ## :bookmark_tabs: Notas
 Este script permite ejecutar con un simple clic para obtener los resultados deseados.
 
@@ -81,19 +72,26 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 
 ## :open_file_folder: Estructura del Repositorio
 
-| Icono            | Nombre                        | Descripción                                           |
-|------------------|-------------------------------|-------------------------------------------------------|
+| Icono            | Nombre                        | Descripción                                          |
+|------------------|-------------------------------|------------------------------------------------------|
 | :file_folder:    | imágenes                      | Carpeta para imágenes                                |
 | :file_folder:    | .gitattributes                | Archivo para configuración de Git                    |
-| :page_facing_up: | GetWiFiKeyHarvester.ps1       | Script principal para la extracción de claves Wi-Fi   |
+| :page_facing_up: | GetWiFiKeyHarvester.ps1       | Script principal para la extracción de claves Wi-Fi  |
 | :page_facing_up: | LICENSE                       | Archivo de licencia del proyecto                     |
 | :page_facing_up: | README.md                     | Archivo de documentación principal                   |
-| :page_facing_up: | RunGetWiFiKeyHarvesters.bat    | Script de batch para ejecutar el script en Windows   |
-| :page_facing_up: | RunGetWiFiKeyHarvesters.cmd    | Script de bat para ejecutar el script en Windows     |
+| :page_facing_up: | RunGetWiFiKeyHarvesters.bat   | Script de batch para ejecutar el script en Windows   |
+| :page_facing_up: | RunGetWiFiKeyHarvesters.cmd   | Script de bat para ejecutar el script en Windows     |
 
-:warning: Disclaimer: Este script es solo para uso educativo y personal. No lo utilices para acceder a redes de terceros sin autorización, ya que esto es ilegal y contrario a los términos de uso de este proyecto.
+## :star2: Contribuciones
+
+Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un *pull request* o *issue*.
+
+## :warning: Advertencias
+
+- Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
+- Seguridad: Guarda el archivo `wifi_passwords.txt` en un lugar seguro y elimínalo si no es necesario para evitar que terceros accedan a esta información.
 
 ## :email: Contacto 
-* :busts_in_silhouette: **Dzhoni_dev**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility) - Desarrollador WiFi Key Harvester
+* :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility) - Desarrollador WiFi Key Harvester
 
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
