@@ -1,6 +1,6 @@
 #====================================================
 #   SCRIPT:                   WiFi Key Harvester
-#   DESARROLLADO POR:         JONY RIVERA (Dzhoni_dev) 
+#   DESARROLLADO POR:         Jony Rivera (Dzhoni)
 #   FECHA DE ACTUALIZACIÓN:   09-09-2024 
 #   CONTACTO TELEGRAM:        https://t.me/Dzhoni_dev
 #   GITHUB OFICIAL:           https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester
@@ -92,7 +92,7 @@ Write-Host "   ID        :  $env:USERNAME"
 Write-Host "   Version   :  v0.0.01-dev"
 Write-Host "   Update    :  [09-09-2024]`n"
 
-Write-Host " Version coded by: Dzhoni_dev`n"
+Write-Host " Version codificada por: Jony Rivera (Dzhoni)`n"
 
 # Crear o abrir un archivo para guardar las contraseñas
 $outputFile = "wifi_passwords.txt"
