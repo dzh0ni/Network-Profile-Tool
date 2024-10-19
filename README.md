@@ -44,6 +44,8 @@ Sigue estos pasos para ejecutar el script.
 ## :mag: Ejemplo de Salida
 El archivo wifi_passwords.txt contendrá entradas en el siguiente formato:
 
+- Seguridad: Guarda el archivo `wifi_passwords.txt` en un lugar seguro y elimínalo si no es necesario para evitar que terceros accedan a esta información.
+
 ```plaintext
 Perfil: <Nombre del Perfil>
 Contraseña: <Contraseña>
@@ -89,7 +91,6 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 ## :warning: Advertencias
 
 - Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
-- Seguridad: Guarda el archivo `wifi_passwords.txt` en un lugar seguro y elimínalo si no es necesario para evitar que terceros accedan a esta información.
 
 ## :email: Contacto 
 * :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility) - Desarrollador WiFi Key Harvester
