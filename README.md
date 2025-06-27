@@ -14,7 +14,7 @@ Para instalar y ejecutar el script WiFi Key Harvester, sigue estos pasos:
 
 1. Descarga el archivo ZIP del repositorio:
 
-   [Descargar el repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester/archive/refs/heads/main.zip)
+   [Descargar el repositorio](https://github.com/dzh0ni/WiFi-Key-Harvester/archive/refs/heads/main.zip)
 
 2. Extrae el contenido del archivo ZIP:
 
@@ -30,9 +30,8 @@ Sigue estos pasos para ejecutar el script.
 
 2. Ejecuta el script:
 
-   Dentro de la carpeta descomprimida, haz doble clic en uno de los siguientes archivos para ejecutar el script
+   Dentro de la carpeta descomprimida, haz doble clic en el siguientes archivos para ejecutar el script
 
-   - `RunGetWiFiKeyHarvesters.bat`
    - `RunGetWiFiKeyHarvesters.cmd`
 
 3. Visualiza los resultados:
