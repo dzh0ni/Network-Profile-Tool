@@ -1,12 +1,12 @@
 #====================================================
 #   SCRIPT:                   WiFi Key Harvester
-#   DESARROLLADO POR:         Jony Rivera (Dzhoni)
-#   FECHA DE ACTUALIZACIÓN:   09-09-2024 
-#   CONTACTO TELEGRAM:        https://t.me/Dzhoni_dev
+#   DESARROLLADO POR:         Jony Rivera (dZh0ni)
+#   FECHA DE ACTUALIZACIÃ“N:   09-09-2024 
+#   CONTACTO TELEGRAM:        https://t.me/dZh0ni_dev
 #   GITHUB OFICIAL:           https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester
 #====================================================
 
-# Función para mostrar un banner
+# FunciÃ³n para mostrar un banner
 function Show-Banner {
     param (
         [Parameter(Mandatory=$true)]
@@ -19,13 +19,13 @@ function Show-Banner {
     $host.UI.RawUI.ForegroundColor = $BannerColor
 
     Write-Host "`n|-------------------------------------------------|"
-    Write-Host "|--------- WiFi Key Harvester - PowerShell -------|"
+    Write-Host "|------------- WiFi Key Harvester ----------------|"
 
     # Cambiar el color del texto
     $host.UI.RawUI.ForegroundColor = $TextColor
     Write-Host "|-------------- " -NoNewline
-    Write-Host "Harvesting WiFi Keys" -ForegroundColor $TextColor -NoNewline
-    Write-Host " -------------|"
+    Write-Host "PowerShell Scrip" -ForegroundColor $TextColor -NoNewline
+    Write-Host " -----------------|"
 
     # Restablecer el color del banner
     $host.UI.RawUI.ForegroundColor = $BannerColor
@@ -35,7 +35,7 @@ function Show-Banner {
     $host.UI.RawUI.ForegroundColor = [System.ConsoleColor]::White
 }
 
-# Función para establecer el color de la consola
+# FunciÃ³n para establecer el color de la consola
 function Set-ConsoleColor {
     param (
         [Parameter(Mandatory=$true)]
@@ -44,7 +44,7 @@ function Set-ConsoleColor {
     $host.UI.RawUI.ForegroundColor = $ForegroundColor
 }
 
-# Función para verificar si un perfil ya está en el archivo
+# FunciÃ³n para verificar si un perfil ya estÃ¡ en el archivo
 function Check-ProfileExists {
     param (
         [Parameter(Mandatory=$true)]
@@ -86,28 +86,33 @@ $black = [System.ConsoleColor]::Black
 Clear-Host
 Show-Banner -BannerColor $green -TextColor $green
 
-# Mostrar información del usuario y versión del script
+# Mostrar informaciÃ³n del usuario y versiÃ³n del script
 Set-ConsoleColor -ForegroundColor $green
-Write-Host "   ID        :  $env:USERNAME"
-Write-Host "   Version   :  v0.0.01-dev"
-Write-Host "   Update    :  [09-09-2024]`n"
 
-Write-Host " Version codificada por: Jony Rivera (Dzhoni)`n"
+Write-Host "ID       :  $env:USERNAME"
+Write-Host "Version  :  v0.0.01-dev"
+Write-Host "Update   :  09-09-2024"
+Write-Host "Licencia :  MIT License"
 
-# Crear o abrir un archivo para guardar las contraseñas
-$outputFile = "wifi_passwords.txt"
+# Mostrar informaciÃ³n del usuario y versiÃ³n del script
+Set-ConsoleColor -ForegroundColor $cyan
+
+Write-Host "`n Desarrollador: dZh0ni - Jony Rivera `n"
+
+# Crear o abrir un archivo para guardar las Clave secretas
+$outputFile = "database_passwords.txt"
 
 # Obtener todos los perfiles Wi-Fi
 $wifiProfiles = netsh wlan show profiles | Select-String "Perfil de todos los usuarios" | ForEach-Object { ($_ -split ":")[1].Trim() }
 
 if ($wifiProfiles.Count -eq 0) {
     Set-ConsoleColor -ForegroundColor $green
-    Write-Host "¡No se encontraron perfiles Wi-Fi!"
+    Write-Host "Â¡No se encontraron perfiles Wi-Fi!"
     Set-ConsoleColor -ForegroundColor $reset
     exit
 }
 
-# Extraer la contraseña de cada perfil y guardarla en el archivo
+# Extraer la Clave secreta de cada perfil y guardarla en el archivo
 foreach ($profile in $wifiProfiles) {
     $profile = $profile.Replace("`r", "")
     $profileClean = $profile -replace '\s+', ' '
@@ -118,18 +123,18 @@ foreach ($profile in $wifiProfiles) {
 
         $password = netsh wlan show profile name="$profileClean" key=clear | Select-String "Contenido de la clave" | ForEach-Object { ($_ -split ":")[1].Trim() }
         if (-not $password) {
-            $password = "No se encontró"
+            $password = "No se encontro"
         }
 
         Set-ConsoleColor -ForegroundColor $cyan
-        Write-Host "Contraseña: $password"
+        Write-Host "Clave secreta: $password"
         
         Set-ConsoleColor -ForegroundColor $green
         Write-Host "-----------------------------------"
 
         # Escribir en el archivo
         Add-Content -Path $outputFile -Value "Perfil: $profileClean"
-        Add-Content -Path $outputFile -Value "Contraseña: $password"
+        Add-Content -Path $outputFile -Value "Clave secreta: $password"
         Add-Content -Path $outputFile -Value "-----------------------------------"
     } else {
         Set-ConsoleColor -ForegroundColor $red
@@ -139,9 +144,45 @@ foreach ($profile in $wifiProfiles) {
 }
 
 Set-ConsoleColor -ForegroundColor $cyan
-Write-Output "`nLas contraseñas Wi-Fi se han guardado en $outputFile`n"
+Write-Output "`nLas Clave secretas Wi-Fi se han guardado en $outputFile`n"
 
-# Restablecer el color del texto
+# Generar tabla simple al finalizar
+$tablaFile = "database_tabla.txt"
+
+if (Test-Path $outputFile) {
+    $lineas = Get-Content $outputFile
+    $datosTabla = @()
+
+    for ($i = 0; $i -lt $lineas.Count; $i++) {
+        if ($lineas[$i] -like "Perfil:*") {
+            $perfil = $lineas[$i] -replace "Perfil:\s*", ""
+            $clave = $lineas[$i + 1] -replace "ContraseÃ±a:\s*", ""
+            $datosTabla += @{ Perfil = $perfil; Contrasena = $clave }
+        }
+    }
+
+    # ConstrucciÃ³n de tabla con barras normales
+    $tablaDecorada = @()
+    $tablaDecorada += "=============================================================="
+    $tablaDecorada += "             CONTRASEÃ‘AS WI-FI RECUPERADAS                    "
+    $tablaDecorada += "=============================================================="
+    $tablaDecorada += "Perfil                                 | ContraseÃ±a           "
+    $tablaDecorada += "--------------------------------------------------------------"
+
+    foreach ($item in $datosTabla) {
+        $linea = "{0,-38} | {1,-20}" -f $item['Perfil'], $item['Contrasena']
+        $tablaDecorada += $linea
+    }
+
+    $tablaDecorada += "=============================================================="
+
+    # Guardar en archivo
+    $tablaDecorada | Out-File -FilePath $tablaFile -Encoding UTF8
+
+    Set-ConsoleColor -ForegroundColor $cyan
+    Write-Host "Tabla generada correctamente y guardada en: $tablaFile`n"
+}
+
 Set-ConsoleColor -ForegroundColor $reset
 
 # Fin del script
