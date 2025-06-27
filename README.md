@@ -64,7 +64,6 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 
 - Automatización: Ejecuta comandos de forma automatizada para simplificar las auditorías Wi-Fi.
 - Organización: Agrupa funcionalidades relacionadas para un acceso rápido y eficiente.
-- Actualización: Incluye funciones para mantener las herramientas actualizadas.
 
 ## :hammer_and_wrench: Requisitos 
 
@@ -80,7 +79,6 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 | :page_facing_up: | GetWiFiKeyHarvester.ps1       | Script principal para la extracción de claves Wi-Fi  |
 | :page_facing_up: | LICENSE                       | Archivo de licencia del proyecto                     |
 | :page_facing_up: | README.md                     | Archivo de documentación principal                   |
-| :page_facing_up: | RunGetWiFiKeyHarvesters.bat   | Script de batch para ejecutar el script en Windows   |
 | :page_facing_up: | RunGetWiFiKeyHarvesters.cmd   | Script de bat para ejecutar el script en Windows     |
 
 ## :star2: Contribuciones
@@ -92,6 +90,4 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 - Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
 
 ## :email: Contacto 
-* :busts_in_silhouette: **Dzhoni**: [GitHub](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/Wifite-Utility) - Desarrollador WiFi Key Harvester
-
-☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
+* :busts_in_silhouette: **dZh0ni**: [Telegram](https://t.me/dZh0ni_Dev) - Desarrollador WiFi Key Harvester
