@@ -30,7 +30,7 @@ Sigue estos pasos para ejecutar el script.
 
 2. Ejecuta el script:
 
-   Dentro de la carpeta descomprimida, haz doble clic en el siguientes archivos para ejecutar el script
+   Dentro de la carpeta descomprimida, haz doble clic en el siguiente archivo para ejecutar el script
 
    - `RunGetWiFiKeyHarvesters.cmd`
 
