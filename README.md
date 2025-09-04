@@ -96,11 +96,14 @@ SSID                                   | Password
 
 ## :star2: Contribuciones
 
-Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un pull request o issue.
+Tus aportes son bienvenidos.  
+Si deseas mejorar este proyecto, añadir nuevas funciones o corregir errores, abre un **pull request**.  
+En caso de detectar un problema, por favor crea un **issue** para que pueda revisarse.
 
-## :warning: Advertencias
+## :warning: Advertencia de Uso
 
-- Uso Responsable: Este script está diseñado para ser utilizado únicamente en dispositivos y redes que te pertenezcan o para las que tengas permiso de uso. No lo uses para actividades no autorizadas.
+Este proyecto está pensado con fines educativos y de administración en redes propias.  
+**No lo utilices en sistemas o redes sin autorización**, ya que hacerlo podría constituir una actividad ilegal.
 
 ## :email: Contacto 
 
