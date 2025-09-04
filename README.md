@@ -39,12 +39,15 @@ Sigue estos pasos para ejecutar el script:
 
 ## :mag: Ejemplo de Salida
 
-### database_passwords.txt
+***database_passwords.txt**
+```plaintext
 Perfil: <Nombre del Perfil>
 Contraseña: <Contraseña>
 -----------------------------------
+```
 
-### database_table.txt
+**database_table.txt**
+```plaintext
 ==============================================================
              RECOVERED WI-FI PASSWORDS
 ==============================================================
@@ -55,6 +58,7 @@ SSID                                   | Password
 <Perfil3>                              | <Contraseña3>
 --------------------------------------------------------------
 ==============================================================
+```
 
 > Seguridad: Guarda los archivos generados en un lugar seguro y elimínalos si no son necesarios para evitar accesos no autorizados.
 
