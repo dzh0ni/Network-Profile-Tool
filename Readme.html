@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Network Profile Tool</title>
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1071/1071164.png">
+<style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; line-height: 1.6; padding: 20px; transition: background 0.3s, color 0.3s; }
+    h1, h2, h3 { color: #2c3e50; }
+    h1 { font-size: 2em; }
+    h2 { margin-top: 1.5em; }
+    h3 { margin-top: 1em; }
+    code { background: #eee; padding: 2px 6px; border-radius: 4px; }
+    pre { background: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 8px; text-align: left; }
+    .note { background: #e6f7ff; border-left: 4px solid #1e90ff; padding: 10px; margin: 10px 0; color: #0077cc; }
+    .warning { background: #ffe6e6; border-left: 4px solid #ff4d4d; padding: 10px; margin: 10px 0; color: #ff0000; }
+    a { color: #2980b9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Modo oscuro */
+    body.dark-mode { background: #121212; color: #e0e0e0; }
+    body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: #bb86fc; }
+    body.dark-mode code, body.dark-mode pre { background: #1e1e1e; color: #cf6679; }
+    body.dark-mode table, body.dark-mode th, body.dark-mode td { border-color: #333; }
+    body.dark-mode th { background: #1f1f1f; color: #bb86fc; }
+    body.dark-mode tr:nth-child(even) { background-color: #1a1a1a; }
+    body.dark-mode tr:nth-child(odd) { background-color: #1c1c1c; }
+    body.dark-mode a { color: #03dac6; }
+    body.dark-mode .note { background: #003366; border-left: 4px solid #3399ff; color: #66ccff; }
+    body.dark-mode .warning { background: #330000; border-left: 4px solid #ff4d4d; color: #ff4d4d; }
+
+    /* Botón de modo oscuro */
+    #darkModeBtn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #2980b9;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background 0.3s;
+    }
+    #darkModeBtn:hover { background: #1c5980; }
+</style>
+</head>
+<body>
+
+<button id="darkModeBtn">Modo Oscuro</button>
+
+<img src="https://raw.githubusercontent.com/dzh0ni/WiFi-Key-Harvester/refs/heads/main/Imagenes/WiFi-Key-Harvester.png" 
+     alt="Network Profile Tool Logo" 
+     style="max-width:400px; height: auto; float: left; margin: 0 20px 20px 0;">
+     
+<h1>Network Profile Tool</h1>
+
+<h2>Descripción</h2>
+<p>Network Profile Tool es un script en PowerShell diseñado para gestionar y recuperar la configuración de redes Wi-Fi, incluyendo la extracción de contraseñas de los perfiles guardados en tu equipo. Este script es útil para auditorías de seguridad y para recuperar contraseñas olvidadas en tus dispositivos propios.</p>
+
+<h2>Instalación</h2>
+<ol>
+<li>Descarga el archivo ZIP del repositorio: <a href="https://github.com/dzh0ni/WiFi-Key-Harvester/archive/refs/heads/main.zip">Descargar el repositorio</a></li>
+<li>Extrae el contenido del archivo ZIP en una carpeta de tu elección.</li>
+</ol>
+
+<h2>Modo de Uso</h2>
+<ol>
+<li>Navega al directorio del script.</li>
+<li>Ejecuta el script haciendo doble clic en: <code>RunNetworkProfileTool.cmd</code></li>
+<li>Visualiza los resultados:
+    <ul>
+        <li>El script mostrará los perfiles Wi-Fi y sus contraseñas en la consola.</li>
+        <li>Las contraseñas se guardarán en la carpeta <code>Database_Passwords</code>:
+            <ul>
+                <li><code>database_passwords.txt</code></li>
+                <li><code>database_table.txt</code></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+</ol>
+
+<h2>Ejemplo de Salida</h2>
+
+<h3>database_passwords.txt</h3>
+<pre>
+Perfil: &lt;Nombre del Perfil&gt;
+Contraseña: &lt;Contraseña&gt;
+-----------------------------------
+</pre>
+
+<h3>database_table.txt</h3>
+<pre>
+==============================================================
+             RECOVERED WI-FI PASSWORDS
+==============================================================
+SSID                                   | Password
+--------------------------------------------------------------
+&lt;Perfil1&gt;                            | &lt;Contraseña1&gt;
+&lt;Perfil2&gt;                            | &lt;Contraseña2&gt;
+&lt;Perfil3&gt;                            | &lt;Contraseña3&gt;
+--------------------------------------------------------------
+==============================================================
+</pre>
+
+<div class="note">
+<p><strong>Seguridad:</strong> Guarda los archivos generados en un lugar seguro y elimínalos si no son necesarios para evitar accesos no autorizados.</p>
+</div>
+
+<h2>Notas</h2>
+<ul>
+<li>Ejecuta el script con permisos adecuados para acceder a los perfiles Wi-Fi.</li>
+<li>Guarda los archivos generados en la carpeta <code>Database_Passwords</code> para mantenerlos organizados.</li>
+<li>Elimina los archivos si no son necesarios para evitar que terceros accedan a la información sensible.</li>
+<li>Verifica los perfiles existentes antes de un nuevo escaneo para evitar duplicados.</li>
+</ul>
+
+<h2>Características</h2>
+<ul>
+<li>Extracción Automática: Obtiene automáticamente las contraseñas de todos los perfiles Wi-Fi guardados en el equipo.</li>
+<li>Registro de Contraseñas: Guarda los resultados en archivos separados (<code>database_passwords.txt</code> y <code>database_table.txt</code>) para facilitar la consulta.</li>
+<li>Organización: Presenta los datos de manera ordenada, con tabla y formato claro.</li>
+<li>Soporte para Windows: Compatible con entornos Windows modernos.</li>
+<li>Automatización: Ejecuta los comandos automáticamente sin intervención adicional.</li>
+</ul>
+
+<h2>Requisitos</h2>
+<ul>
+<li>Sistema Operativo: Windows</li>
+<li>PowerShell: Versión 5.1 o superior</li>
+</ul>
+
+<h2>Estructura del Repositorio</h2>
+<table>
+<tr><th>Icono</th><th>Nombre</th><th>Descripción</th></tr>
+<tr><td>📁</td><td>imágenes</td><td>Carpeta para imágenes</td></tr>
+<tr><td>📁</td><td>.gitattributes</td><td>Archivo para configuración de Git</td></tr>
+<tr><td>📄</td><td>NetworkProfileTool.ps1</td><td>Script principal para la gestión de redes Wi-Fi</td></tr>
+<tr><td>📄</td><td>LICENSE</td><td>Archivo de licencia del proyecto</td></tr>
+<tr><td>📄</td><td>README.md</td><td>Archivo de documentación principal</td></tr>
+<tr><td>📄</td><td>README.html</td><td>Versión HTML del README para visualización en navegador</td></tr>
+<tr><td>📄</td><td>RunNetworkProfileTool.cmd</td><td>Script para ejecutar el script en Windows</td></tr>
+</table>
+
+<h2>Contribuciones</h2>
+<p>Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un pull request o issue.</p>
+
+<div class="warning">
+<p><strong>Advertencias:</strong> Uso Responsable: Este script está diseñado para ser utilizado únicamente en dispositivos y redes que te pertenezcan o para las que tengas permiso de uso. No lo uses para actividades no autorizadas.</p>
+</div>
+
+<h2>Contacto</h2>
+<p>dZh0ni: <a href="https://t.me/dZh0ni_Dev">Telegram</a> - Desarrollador de Network Profile Tool</p>
+
+<script>
+    const darkModeBtn = document.getElementById('darkModeBtn');
+    darkModeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+</body>
+</html>

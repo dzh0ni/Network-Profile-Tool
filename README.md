@@ -1,16 +1,13 @@
 ﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/WiFi-Key-Harvester/blob/main/Imagenes/WiFi-Key-Harvester.png)
 
-# WiFi Key Harvester :octocat:
- 
+# Network Profile Tool :octocat:
+
 ## :information_source: Descripción
-WiFi Key Harvester es un script en PowerShell diseñado para extraer y registrar 
-las contraseñas de todas las redes Wi-Fi guardadas en tu equipo. Este script 
-es útil para recuperar contraseñas olvidadas o para realizar auditorías 
-de seguridad en tus propios dispositivos.
+Network Profile Tool es un script en PowerShell diseñado para gestionar y recuperar la configuración de redes Wi-Fi, incluyendo la extracción de contraseñas de los perfiles guardados en tu equipo. Este script es útil para auditorías de seguridad y para recuperar contraseñas olvidadas en tus dispositivos propios.
 
 ### :computer: Instalación
 
-Para instalar y ejecutar el script WiFi Key Harvester, sigue estos pasos:
+Para instalar y ejecutar Network Profile Tool, sigue estos pasos:
 
 1. Descarga el archivo ZIP del repositorio:
 
@@ -22,53 +19,66 @@ Para instalar y ejecutar el script WiFi Key Harvester, sigue estos pasos:
 
 ## :rocket: Modo de Uso
 
-Sigue estos pasos para ejecutar el script.
+Sigue estos pasos para ejecutar el script:
 
 1. Navega al directorio del script.
 
-   Navega hasta la carpeta donde descomprimiste el archivo ZIP. 
+   Ve a la carpeta donde descomprimiste el archivo ZIP. 
 
 2. Ejecuta el script:
 
-   Dentro de la carpeta descomprimida, haz doble clic en el siguiente archivo para ejecutar el script
+   Dentro de la carpeta descomprimida, haz doble clic en el archivo:
 
-   - `RunGetWiFiKeyHarvesters.cmd`
+   - RunNetworkProfileTool.cmd
 
 3. Visualiza los resultados:
    - El script mostrará los perfiles Wi-Fi encontrados y sus contraseñas en la consola.
-   - Las contraseñas se guardarán en un archivo de texto llamado `wifi_passwords.txt` en el mismo directorio donde se encuentra el script.
-
-¡Y eso es todo! Ahora estás listo para utilizar WiFi Key Harvester para recuperar tus contraseñas Wi-Fi guardadas.
+   - Las contraseñas se guardarán en la carpeta Database_Passwords:
+     - database_passwords.txt
+     - database_table.txt
 
 ## :mag: Ejemplo de Salida
-El archivo wifi_passwords.txt contendrá entradas en el siguiente formato:
 
-- Seguridad: Guarda el archivo `wifi_passwords.txt` en un lugar seguro y elimínalo si no es necesario para evitar que terceros accedan a esta información.
-
-```plaintext
+### database_passwords.txt
 Perfil: <Nombre del Perfil>
 Contraseña: <Contraseña>
 -----------------------------------
-```
+
+### database_table.txt
+==============================================================
+             RECOVERED WI-FI PASSWORDS
+==============================================================
+SSID                                   | Password           
+--------------------------------------------------------------
+<Perfil1>                              | <Contraseña1>
+<Perfil2>                              | <Contraseña2>
+<Perfil3>                              | <Contraseña3>
+--------------------------------------------------------------
+==============================================================
+
+> Seguridad: Guarda los archivos generados en un lugar seguro y elimínalos si no son necesarios para evitar accesos no autorizados.
 
 ## :bookmark_tabs: Notas
-Este script permite ejecutar con un simple clic para obtener los resultados deseados.
+Este script permite ejecutar con un simple clic y obtener los resultados de manera organizada.  
+Algunas recomendaciones de uso:
 
-- Extracción Automática: Extrae automáticamente las contraseñas de todos los perfiles Wi-Fi almacenados en tu equipo.
-- Registro de Contraseñas: Guarda las contraseñas extraídas en un archivo de texto para su posterior consulta.
-- Detección de Duplicados: Verifica si un perfil ya ha sido registrado previamente para evitar duplicados en el archivo de salida.
-- Soporte para Windows: Diseñado específicamente para entornos Windows.
-- Permisos: Asegúrate de ejecutar los scripts con permisos adecuados
+- Ejecuta el script con permisos adecuados para acceder a los perfiles Wi-Fi.  
+- Guarda los archivos generados en la carpeta Database_Passwords para mantenerlos organizados.  
+- Elimina los archivos si no son necesarios para evitar que terceros accedan a la información sensible.  
+- Verifica los perfiles existentes antes de un nuevo escaneo para evitar duplicados.  
 
-## :star2: Características 
+## :star2: Características
 
-- Automatización: Ejecuta comandos de forma automatizada para simplificar las auditorías Wi-Fi.
-- Organización: Agrupa funcionalidades relacionadas para un acceso rápido y eficiente.
+- Extracción Automática: Obtiene automáticamente las contraseñas de todos los perfiles Wi-Fi guardados en el equipo.  
+- Registro de Contraseñas: Guarda los resultados en archivos separados (database_passwords.txt y database_table.txt) para facilitar la consulta.  
+- Organización: Presenta los datos de manera ordenada, con tabla y formato claro.  
+- Soporte para Windows: Compatible con entornos Windows modernos.  
+- Automatización: Ejecuta los comandos automáticamente sin intervención adicional.  
 
-## :hammer_and_wrench: Requisitos 
+## :hammer_and_wrench: Requisitos
 
-- Sistema Operativo: Windows
-- PowerShell: Versión 5.1 o superior
+- Sistema Operativo: Windows  
+- PowerShell: Versión 5.1 o superior  
 
 ## :open_file_folder: Estructura del Repositorio
 
@@ -76,18 +86,20 @@ Este script permite ejecutar con un simple clic para obtener los resultados dese
 |------------------|-------------------------------|------------------------------------------------------|
 | :file_folder:    | imágenes                      | Carpeta para imágenes                                |
 | :file_folder:    | .gitattributes                | Archivo para configuración de Git                    |
-| :page_facing_up: | GetWiFiKeyHarvester.ps1       | Script principal para la extracción de claves Wi-Fi  |
+| :page_facing_up: | NetworkProfileTool.ps1        | Script principal para la gestión de redes Wi-Fi      |
 | :page_facing_up: | LICENSE                       | Archivo de licencia del proyecto                     |
 | :page_facing_up: | README.md                     | Archivo de documentación principal                   |
-| :page_facing_up: | RunGetWiFiKeyHarvesters.cmd   | Script de bat para ejecutar el script en Windows     |
+| :page_facing_up: | README.html                   | Versión HTML del README para visualización en navegador |
+| :page_facing_up: | RunNetworkProfileTool.cmd     | Script para ejecutar el script en Windows           |
 
 ## :star2: Contribuciones
 
-Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un *pull request* o *issue*.
+Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un pull request o issue.
 
 ## :warning: Advertencias
 
-- Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
+- Uso Responsable: Este script está diseñado para ser utilizado únicamente en dispositivos y redes que te pertenezcan o para las que tengas permiso de uso. No lo uses para actividades no autorizadas.
 
 ## :email: Contacto 
-* :busts_in_silhouette: **dZh0ni**: [Telegram](https://t.me/dZh0ni_Dev) - Desarrollador WiFi Key Harvester
+
+- :busts_in_silhouette: dZh0ni: [Telegram](https://t.me/dZh0ni_Dev) - Desarrollador de Network Profile Tool
