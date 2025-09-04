@@ -63,8 +63,6 @@ SSID                                   | Password
 > Seguridad: Guarda los archivos generados en un lugar seguro y elimínalos si no son necesarios para evitar accesos no autorizados.
 
 ## :bookmark_tabs: Notas
-Este script permite ejecutar con un simple clic y obtener los resultados de manera organizada.  
-Algunas recomendaciones de uso:
 
 - Ejecuta el script con permisos adecuados para acceder a los perfiles Wi-Fi.  
 - Guarda los archivos generados en la carpeta Database_Passwords para mantenerlos organizados.  
