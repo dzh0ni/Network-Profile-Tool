@@ -39,7 +39,7 @@ Sigue estos pasos para ejecutar el script:
 
 ## :mag: Ejemplo de Salida
 
-***database_passwords.txt**
+**database_passwords.txt**
 ```plaintext
 Perfil: <Nombre del Perfil>
 Contraseña: <Contraseña>
