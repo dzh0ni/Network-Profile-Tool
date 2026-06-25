@@ -2,7 +2,7 @@
 #   SCRIPT:                     Network Profile Tool 
 #   DESCRIPTION:                Network configuration management 
 #   VERSION:                    2.2-dev 
-#   DEVELOPER:                  dZh0ni - Jony Rivera 
+#   DEVELOPER:                  dZh0ni 
 #   LAST UPDATE:                03-09-2025 
 #   TELEGRAM CONTACT:           https://t.me/dZh0ni_dev 
 #   OFFICIAL GITHUB:            https://github.com/dzh0ni/Network-Profile-Tool 
